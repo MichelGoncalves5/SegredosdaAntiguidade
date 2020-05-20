@@ -3,61 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segredos da Antiguidade</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src='scripts.js'> </script>
-    
+    <title>Teste de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+       
 </head>
-<body>
-    
-    <div id="container">
-        <div id="header">
-            <img class="banner" src="imagens/header.png" alt="Banner Segredos da Antiguidade">
-        </div>
-         
-        <div id="menu">
-            <ul>  			
-                <li><a href="index.html">Início</a></li>  			
-                <li><a href="artigos.html">Artigos</a></li>  			
-                <li><a href="contos.html">Contos</a></li>  			
-                <li><a href="critica.html">Crítica</a></li>                  		
-            </ul>  
-        </div>     
-        
-        
-        <div id="critica"> 
-            <div class="linha">
-                <div class="obra">
-                    <img class="imgobra" href="maquiavel.html" src="imagens/maquiavel.png">
-                </div>
-                <div class="comentario">
-                    <h3><a href="maquiavel.html">O Saque de Prato: A Ruína de Maquiavel</a> </h3>
-                    <p>O Saque de Prato foi um dos maiores massacres da idade média. Relatos variam de duas a seis mil pessoas. Os espanhóis passaram 20 horas saqueando a cidade, matando e estuprando. Conta-se que não foram poupados nem os que se refugiaram nas igrejas, conforme o seguinte relato: <a href="maquiavel.html">Leia Mais</a></p>
-                    
-                </div>
 
-            </div>
-            <div id="critica"> 
-                <div class="linha">
-                    <div class="obra">
-                        <img class="imgobra" href="atlantida.html" src="imagens/atlantida.png">
-                    </div>
-                    <div class="comentario">
-                        <h3><a href="atlantida.html">Atlântida: Fato ou Mito?</a> </h3>
-                        <p>itada pela primeira vez por Platão, o continente de Atlântida, submerso aproximadamente 9.000 A.C., é um dos maiores mistérios da humanidade. Após mais de um século de buscas, sua existência poderia revolucionar o que conhecemos sobre as origens dos povos egípcios e americanos. Mas afinal, seria Atlântida um fato, ou um mito? <a href="atlantida.html">Leia mais.</a></p>
-                        
-                    </div>
-    
-                </div>  
-            </div>          
-        </div>        
-        
-        <div id="footer">
-            <p>©2020 Copyright: Segredos da Antiguidade.</p> 
-        </div> 
-  
-  
+<body>
+  <div class="container">
+     <!-- ############# Header #########-->
+     <div class="row">
+      <div class="col">
+          <img class="img-fluid w-100"  src="imagens/header.png"></img>
+      </div>
     </div>
-        
+
+    <!-- ############# Navbar #########-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artigos.html">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contos.html">Contos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="critica.html">Crítica</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ############# Artigos #########-->
+        <h1 class="text-center">Artigos</h1>
+        <div class="row bg-light">
+            <div class="col-4 col-md-3 col-lg-2"> 
+                <img class="img-fluid max-width: 100% w-100 mt-4 mb-4"  src="imagens/maquiavel.png"></img>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 mt-3"> 
+                <h3>O Saque de Prato: A Ruína de Maquiavel</h3>
+                <p> Maquiavel, tido como um dos maiores estrategistas da humanindade, teve sua ruína política determinada justamente por uma derrota militar, o Saque de Prato. Qual teria sido seu papel em um dos maiores massacres da idade média? Incompetência? Covardia? Ou tudo faria parte de seu plano?</small></p>
+                <a href="maquiavel.html" type="button" class="btn btn-primary btn-sm col-4"> Leia Mais</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row bg-light">
+          <div class="col-4 col-md-3 col-lg-2"> 
+              <img class="img-fluid max-width: 100% w-100 mt-4 mb-4"  src="imagens/atlantida.png"></img>
+          </div>
+          <div class="col-8 col-md-9 col-lg-10 mt-3"> 
+              <h3>Atlântida: Fato ou Mito?</h3>
+              <p>Uitada pela primeira vez por Platão, o continente de Atlântida, submerso aproximadamente 9.000 A.C., é um dos maiores mistérios da humanidade. Após mais de um século de buscas, sua existência poderia revolucionar o que conhecemos sobre as origens dos povos egípcios e americanos. Mas afinal, seria Atlântida um fato, ou um mito? </small></p>
+              <a href="atlantida.html" type="button" class="btn btn-primary btn-sm col-4"> Leia Mais</a>
+          </div>
+        </div>  
+        <hr> 
+    </div>
+    <div class="footer">
+      <p class="text-center">©2020 Copyright: Segredos da Antiguidade.</p>
+    </div>  
+         
+  </div>  
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -4,59 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segredos da Antiguidade</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src='scripts.js'> </script>
-    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src='scripts.js'> </script>   
+       
 </head>
-<body>
-    
-    <div id="container">
-        <div id="header">
-            <img class="banner" src="imagens/header.png" alt="Banner Segredos da Antiguidade">
-        </div>
-         
-        <div id="menu">
-            <ul>  			
-                <li><a href="index.html">Início</a></li>  			
-                <li><a href="artigos.html">Artigos</a></li>  			
-                <li><a href="contos.html">Contos</a></li>  			
-                <li><a href="critica.html">Crítica</a></li>                  		
-            </ul>  
-        </div> 
-        
-        <div id="artigocritico"> 
-            <div class="textocritico">
-                <div class="capa">
-                    <img class="imgcapa" src="imagens/thecode.png">
-                </div>
-                <div class="comentariocritico">
-                    <h1>Crítica</h1>                 
-                    <h2>Documentário: The Code</h2>
-                    <h4>Postado em 15/05/2020</h4>                
-                    <p>The Code é um documentário da BBC produzido em 2011, apresentado pelo matemático Marcus du Sautoy. Sua premissa é apresentar um código que seria capaz de explicar eventos passados e futuros, através da compreensão de padrões numéricos que regem nossa vida. Mas será que a série, em três episódios, entrega o que promete?<br><br>
-                    
-                    <h6>Spoiler Alert</h6>
 
-                    <button id="btn1">Expandir/encolher comentários</button>
-                    <p id="p1">No primeiro episódio, Marcus aborda números sagrados, a importância do Pi e suas aplicações, números imaginários, o curioso ciclo de vida de uma espécie de cigarras que viram adultas a cada treze anos, e a proporção perfeita entre as câmaras da concha de um Nautilus. No segundo, ele investiga rochas irlandesas que se aglomeram em hexágonos, uma mina de sal alemã com formas geométricas perfeitas, e a geometria de bolhas de sabão (é mais interessante do que parece), relacionando isso à geometria pitagórica e seus poliedros. A série encerra com Marcus abordando geometria fractal, a teoria do caos, efeito borboleta, o Google utilizando algoritmos para prever gripes através da busca dos internautas e finalmente encerra com um estudo sobre a proporção em que a felicidade das pessoas melhora com o aumento das cidades.<br><br>
-                    
-                    A série tem ótima produção, com cenários  belos e variados e uma fotografia de altíssima qualidade. Os temas são clássicos na biologia, tecnologia e arquitetura, e ele entrevista vários especialistas para justificar o seu código.  Porém, Du Sautoy não é um apresentador muito carismático, e sua apresentação em tom arrogante acabam sendo um ponto negativo para a aceitação das suas ideias. Além disso, ao optar por tantas teorias e abordagens em trẽs episódios, ele nunca chega a se aprofundar na maioria deles. Além disso, ele passar o documentário prometendo um código para compreensão de passado e previsão do futuro, o que ele nunca entrega.<br><br>
-                    
-                    Dessa forma, a série é muito interessante para despertar a curiosidade sobre diversos temas interessantes, sem de fato entregar o suficiente para elucidar a maioria deles. Pior ainda, falha totalmente em interligar todos os assuntos abordados em um “Código”, que nunca é entregue.</p>
-                    
-                    <a class="negrito">Conclusão</a><br><br>
-                    A série é realmente interessante e bem produzida, e vale suas quase três horas. Entretanto, falha completamente em entregar o que promete, que seria de fato um código para compreensão dos fenômenos da vida. Para quem está interessado em uma abordagem matemática de vários fenômenos da natureza, recomendo assistir, pois a série é exatamente isso: um apanhado de várias teorias que já existem,sobre coisas que já conhecemos, e não irá revelar nenhum segredo realmente inédito. 
-                    
-                    <h5> Nota IMD: 7.8/10<br>
-                    Nota Rotten Tomatoes: Não disponível.<br><br>
-                    Nota Segredos da Antiguidade:<a class="neutro"> 7/10</a></h5> <a class="neutro">Recomendação neutra. Assista se estiver curioso, mas sem expectativas.</a>    
-                    <img class="nps" src="imagens/nps.png" alt="Net Promoter Score">
-                </div>
-            </div>                     
-        </div>       
-        <div id="footer">
-            <p>©2020 Copyright: Segredos da Antiguidade.</p> 
-        </div>   
-    </div>        
+<body>
+  <div class="container">
+     <!-- ############# Header #########-->
+     <div class="row">
+      <div class="col">
+          <img class="img-fluid w-100"  src="imagens/header.png"></img>
+      </div>
+    </div>
+
+    <!-- ############# Navbar #########-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artigos.html">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contos.html">Contos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="critica.html">Crítica</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ############# Artigos #########-->
+    
+    <div id="artigocritico"> 
+        <h1 class="text-center">Crítica</h1> 
+        <hr>
+        <div class="textocritico">
+            <div class="capa">
+                <img class="imgcapa" src="imagens/thecode.png">
+            </div>
+            <div class="comentariocritico">
+                                
+                <h3>Documentário: The Code</h3>
+                <h5>Postado em 15/05/2020</h5>                
+                <p>The Code é um documentário da BBC produzido em 2011, apresentado pelo matemático Marcus du Sautoy. Sua premissa é apresentar um código que seria capaz de explicar eventos passados e futuros, através da compreensão de padrões numéricos que regem nossa vida. Mas será que a série, em três episódios, entrega o que promete?<hr>
+                
+                <p class="text-danger text-center">Spoiler Alert</p>                
+
+                <button id="btn1">Expandir/encolher comentários</button>
+                
+                <p id="p1">No primeiro episódio, Marcus aborda números sagrados, a importância do Pi e suas aplicações, números imaginários, o curioso ciclo de vida de uma espécie de cigarras que viram adultas a cada treze anos, e a proporção perfeita entre as câmaras da concha de um Nautilus. No segundo, ele investiga rochas irlandesas que se aglomeram em hexágonos, uma mina de sal alemã com formas geométricas perfeitas, e a geometria de bolhas de sabão (é mais interessante do que parece), relacionando isso à geometria pitagórica e seus poliedros. A série encerra com Marcus abordando geometria fractal, a teoria do caos, efeito borboleta, o Google utilizando algoritmos para prever gripes através da busca dos internautas e finalmente encerra com um estudo sobre a proporção em que a felicidade das pessoas melhora com o aumento das cidades.<br><br>
+                
+                A série tem ótima produção, com cenários  belos e variados e uma fotografia de altíssima qualidade. Os temas são clássicos na biologia, tecnologia e arquitetura, e ele entrevista vários especialistas para justificar o seu código.  Porém, Du Sautoy não é um apresentador muito carismático, e sua apresentação em tom arrogante acabam sendo um ponto negativo para a aceitação das suas ideias. Além disso, ao optar por tantas teorias e abordagens em trẽs episódios, ele nunca chega a se aprofundar na maioria deles. Além disso, ele passar o documentário prometendo um código para compreensão de passado e previsão do futuro, o que ele nunca entrega.<br><br>
+                
+                Dessa forma, a série é muito interessante para despertar a curiosidade sobre diversos temas interessantes, sem de fato entregar o suficiente para elucidar a maioria deles. Pior ainda, falha totalmente em interligar todos os assuntos abordados em um “Código”, que nunca é entregue.</p>
+                <hr>
+                
+                <a class="negrito">Conclusão</a><br><br>
+                A série é realmente interessante e bem produzida, e vale suas quase três horas. Entretanto, falha completamente em entregar o que promete, que seria de fato um código para compreensão dos fenômenos da vida. Para quem está interessado em uma abordagem matemática de vários fenômenos da natureza, recomendo assistir, pois a série é exatamente isso: um apanhado de várias teorias que já existem,sobre coisas que já conhecemos, e não irá revelar nenhum segredo realmente inédito. <br><br>
+                
+                <p><strong> Nota IMD: 7.8/10<br>
+                Nota Rotten Tomatoes: Não disponível.<br><br>
+                Nota Segredos da Antiguidade: 7/10</strong></p> <p class="neutro">Recomendação neutra. Assista se estiver curioso, mas sem expectativas.</p>    
+                <img class="nps" src="imagens/nps.png" alt="Net Promoter Score">
+            </div>
+        </div>                     
+    </div>       
+        <hr> 
+    </div>
+    <div class="footer">
+      <p class="text-center">©2020 Copyright: Segredos da Antiguidade.</p>
+    </div>  
+         
+  </div>  
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>

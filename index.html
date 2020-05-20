@@ -3,54 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segredos da Antiguidade</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Teste de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+       
 </head>
+
 <body>
     
-    <div id="container">
-        <div id="header">
-            <img class="banner" src="imagens/header.png" alt="Banner Segredos da Antiguidade">
-        </div>
-         
-        <div id="menu">
-            <ul>  			
-                <li><a href="index.html">Início</a></li>  			
-                <li><a href="artigos.html">Artigos</a></li>  			
-                <li><a href="contos.html">Contos</a></li>  			
-                <li><a href="critica.html">Crítica</a></li>                  		
-            </ul>  
-        </div>
-        
-        <!-- #region <div id="mainnav">
-             	
-        </div>-->
-        
-        <div class="sidebar">
-            <h1>Últimas Postagens</h1> <br>
-            <a href="atlantida.html">Artigo: Atlântida: Fato ou Fição?</a><br><br>
-            <a href="maquiavel.html">O Saque de Prato: A Ruína de Maquiavel</a><br><br>
-            <a href="thecode.html">Crítica: The Code</a><br><br>
-            <a href="misterioobscuro.html">Crítica: Mistério Obscuro</a><br><br>
-        </div>
-
-        <div id="contents"> 
-            <h1>Segredos da Antiguidade</h1>
-            <p>Seja muito bem vindo(a), leitor(a)! O projeto Segredos da Antiguidade foi feito para você que é curioso(a), investigador(a). Nosso propósito é trazer temas da história do nosso planeta que nunca foram completamente desvendados (e existem tantos!). É importante destacar que, nesse espaço, não temos a pretensão de desvendá-los, mas sim descrever os mistérios e levantar hipóteses plausíveis. Ou não. Caberá a você decidir isso.<br><br>
-                
-            Não é necessário conhecimento profundo de história para desfrutar nosso conteúdo. Apresentaremos de forma didática e, caso necessário, contextualizaremos personagens ou eventos que não são de conhecimento geral. Sua única limitação é sua pŕopria curiosidade!<br><br>
-                
-            Além disso, temos a intenção de, em breve expandir para um espaço cultural, com produção de literatura, críticas sobre filmes, livros e obras, e um mural de discussão.<br><br>
-
-            Desfrutem!</p>
-        </div>
-        
-        <div id="footer">
-            <p> 2020 Copyright: Segredos da Antiguidade.</p>  
-        </div>
-  
-  
+  <div class="container">
+     <!-- ############# Header #########-->
+    <div class="row">
+      <div class="col">
+          <img class="img-fluid w-100"  src="imagens/header.png"></img>
+      </div>
     </div>
+
+    <!-- ############# Navbar #########-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artigos.html">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contos.html">Contos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="critica.html">Crítica</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ############# Carousel #########-->    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <h1 class="text-center">Últimas Postagens</h1>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a class="text-dark" href="criticas.html"><img class="d-block mx-auto" height="250px" src="imagens/carouselatlantida.png" alt="First slide">
+          <div class="carousel-caption">
+            <h4>Atlântida: Fato ou Mito</h4></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a class="text-dark" href="maquiavel.html"><img class="d-block mx-auto" height="250px" src="imagens/carouselmaquiavel.png" alt="Second slide">
+            <div class="carousel-caption">
+              <h4>A Ruína de Maquiavel</h4></a>            
+            </div>
+        </div>
+        <div class="carousel-item">
+          <a class="text-dark" href="misterioobscuro.html"><img class="d-block mx-auto" height="250px" src="imagens/carouselmisterioobscuro.png" alt="Third slide">
+          <div class="carousel-caption">
+            <h4>Crítica: Mistério Obscuro</h4></a>
+          </div>
+        </div>
+      </div>               
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+     
+    <hr>
+    <!-- ############# Cards #########-->
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-sm-4 d-flex">
+          <div class="card">
+            <div class="card-header text-center">Curiosidades</div>
+              <div class="card-body flex-fill">
+                <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/henriqueviii.png">
+                <h3 class="card-title text-center">Henrique VIII</h3>
+                <p class="card-text">O famoso monarca Tudor, ao longo da vida, teve quatro "Criados da Latrina". Todos foram sagrados cavaleiros.</p>                 
+              </div>
+              <div class="card-footer">
+                <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal1"> Entenda</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex">
+          <div class="card">
+            <div class="card-header text-center">Curiosidades</div>
+              <div class="card-body flex-fill">
+                <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/castration.png">
+                <h3 class="card-title text-center">O Testículo Indesejado</h3>
+                <p class="card-text">Ao perseguir cegamente a sabedoria de Aristóteles, alguns homens medievais sacrificavam um testículo em troca de um herdeiro homem.</p>
+                  
+              </div>
+              <div class="card-footer">
+                <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal2"> Entenda</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex">
+          <div class="card">
+            <div class="card-header text-center">Curiosidades</div>
+              <div class="card-body flex-fill">
+                <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/enterradovivo.png">
+                <h3 class="card-title text-center">Tafofobia</h3>
+                <p class="card-text">Medo de ser enterrado vivo é paranóia? No século XIX, isso acontecia com tanta frequência que uma invenção inusitada foi patenteada.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal3"> Entenda</a>
+              </div>              
+          </div>          
+        </div>
+      </div>
+  
+
+    <!-- ############# Modals #########-->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center">
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+              <h2 class="text-center">Henrique VIII e os "Criados da Latrina"</h2>              
+            </div>            
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/henriqueviii.png">
+            <p class="text-justify">Rei da Inglaterra de 1509 até 1547, Henrique tinha um ego quase tão enorme quanto seu corpo. George R.R. Martin já admitiu que se inspirou nele ao criar <strong>Robert Baratheon</strong>, inclusive. Sabia-se que a melhor forma de chegar ao poder na corte era aproximar-se da família real. Dentre as funções, uma das mais importantes eram os <em>"Groomers of the Stool"</em>, que seriam "criados do banquinho". A questão é que, na época, o banco era uma referência à <strong>latrina</strong>, onde as pessoas defecavam. Dessa forma, os quatro distintos criados, que ao longo da vida limparam o enorme traseiro real, foram todos consagrados cavaleiros.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center">
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+              <h2 class="text-center">O Testículo Indesejado</h2>              
+            </div>            
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/castration.png">
+            <p class="text-justify">Aristóteles, em sua grande sabedoria, concluiu que o testículo esquerdo gerava meninas, ao testar animais com o testículo esquerdo amarrado gerando machos. Na idade média, alguns homens levaram isso muito a sério, <strong>castrando o testículo esquerdo</strong> para gerarem descententes masculinos. É possível que o Irlandeses, porém, não compartilhassem essa crença. Caso um homem mutilasse um dos testículos do outro, a indenização era maior caso esse testículo fosse o esquerdo.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal3">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center">
+            <div class="modal-title">
+              <button type="button" class="close" data-dismiss="modal">X</button>
+              <h2 class="text-center">Tafofobia</h2>              
+            </div>            
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid max-width-100 d-block mx-auto" src="imagens/safetycoffin.png">
+            <p class="text-justify">No século XIX, com as epidemias de cólera, os médicos tinham poucos recursos para identificar com certeza o óbito. Edgar Alan Poe, inclusive, escreveu O Enterro Prematuro, um história de terror sobre o tema. Como sempre tem alguém disposo a lucrar com o medo alheio, diversos caixões com mecanismos de alarme foram patenteados, com opção para o suposto defundo tocar um alarme, avisando que ainda não havia chegado sua hora.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr><hr>
+         
+    <div class="footer">
+      <p class="text-center">©2020 Copyright: Segredos da Antiguidade.</p>
+    </div>  
+  </div>         
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
 
 </body>
 </html>

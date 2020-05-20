@@ -3,36 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segredos da Antiguidade</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src='scripts.js'> </script>
+    <title>Teste de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+       
 </head>
+
 <body>
-    
-    <div id="container">
-        <div id="header">
-            <img class="banner" src="imagens/header.png" alt="Banner Segredos da Antiguidade">
-        </div>
-         
-        <div id="menu">
-            <ul>  			
-                <li><a href="index.html">Início</a></li>  			
-                <li><a href="artigos.html">Artigos</a></li>  			
-                <li><a href="contos.html">Contos</a></li>  			
-                <li><a href="critica.html">Crítica</a></li>                  		
-            </ul>  
-        </div>          
-        
-        <div id="contos"> 
-            <p>Esta área será destinada a divulgação de contos, crônicas ou poemas cujo tema seja relacionado com o propósito do site. Em breve, inauguraremos.</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
-        </div>
-        
-        <div id="footer">
-            <p>©2020 Copyright: Segredos da Antiguidade.</p>  
-        </div>
-  
+  <div class="container">
+     <!-- ############# Header #########-->
+     <div class="row">
+      <div class="col">
+          <img class="img-fluid w-100"  src="imagens/header.png"></img>
+      </div>
     </div>
 
+    <!-- ############# Navbar #########-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artigos.html">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contos.html">Contos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="critica.html">Crítica</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ############# Contos #########-->
+        <h1 class="text-center">Contos</h1>
+        <div class="row jumbotron">
+            <p>Esta área será destinada a divulgação de contos, crônicas ou poemas cujo tema seja relacionado com o propósito do site. Em breve, inauguraremos.</p>                
+        </div>
+        <hr><br><br>
+        <hr> <br><br>
+        <hr> <br><br>
+    </div>
+    <div class="footer">
+      <p class="text-center">©2020 Copyright: Segredos da Antiguidade.</p>
+    </div>  
+         
+  </div>  
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>

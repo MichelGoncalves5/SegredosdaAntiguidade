@@ -3,56 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segredos da Antiguidade</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src='scripts.js'> </script>
+    <title>Teste de Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+        
+       
 </head>
+
 <body>
-    
-    <div id="container">
-        <div id="header">
-            <img class="banner" src="imagens/header.png" alt="Banner Segredos da Antiguidade">
-        </div>
-         
-        <div id="menu">
-            <ul>  			
-                <li><a href="index.html">Início</a></li>  			
-                <li><a href="artigos.html">Artigos</a></li>  			
-                <li><a href="contos.html">Contos</a></li>  			
-                <li><a href="critica.html">Crítica</a></li>                  		
-            </ul>  
-        </div>          
-        
-        <div id="critica"> 
-            <div class="linha">
-                <div class="obra">
-                    <img class="imgobra" href="thecode.html" src="imagens/thecode.png">
-                </div>
-                <div class="comentario">
-                    <h3><a href="thecode.html">The Code</a> </h3>
-                    <p>The Code é um documentário da BBC produzido em 2011, apresentado pelomatemático Marcus du Sautoy. Sua premissa é apresentar um código que seria capaz de explicar eventos passados e futuros, através da compreensão de padrões numéricos que regem nossa vida. Mas será que a série, em três episódios, entrega o que promete?
-                        <a href="thecode.html">Leia mais.</a></p>
-                    
-                </div>
-
-            </div>
-
-            <div class="linha">
-                <div class="obra">
-                    <img class="imgobra" src="imagens/misterioobscuro.png">
-                </div>
-                <div class="comentario">
-                    <h3><a href="misterioobscuro.html">Mistério Obscuro</a> </h3>
-                    <p>Unacklowledged, como é intitulado em inglês, é um documentário da Auroris Media de 1h40min onde são reveladas várias informações sobre a existência e aparições de OVNIs, assim como as conspirações para evitar o vazamento dessas informações. Em um assunto tão polêmico, será a abordagem séria e profunda o suficiente para prender o telespectador?<a href="misterioobscuro.html">Leia mais.</a></p>
-                </div>
-            </div>
-        </div>            
-        
-        <div id="footer">
-
-            <p>©2020 Copyright: Segredos da Antiguidade.</p>  
-  
-        </div>
+  <div class="container">
+     <!-- ############# Header #########-->
+     <div class="row">
+      <div class="col">
+          <img class="img-fluid w-100"  src="imagens/header.png"></img>
+      </div>
     </div>
+
+    <!-- ############# Navbar #########-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artigos.html">Artigos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contos.html">Contos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="critica.html">Crítica</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ############# Critica #########-->
+        <h1 class="text-center">Crítica</h1>
+        <div class="row bg-light">
+            <div class="col-4 col-md-3 col-lg-2"> 
+                <img class="img-fluid max-width: 100% w-100 mt-4 mb-4"  src="imagens/thecode.png"></img>
+            </div>
+            <div class="col-8 col-md-9 col-lg-10 mt-3"> 
+                <h3>The Code</h3>
+                <p>The Code é um documentário da BBC produzido em 2011, que promete apresentar um código capaz de explicar eventos passados e futuros, através da compreensão de padrões numéricos que regem nossa vida. Mas será que a série, em três episódios, entrega isso?</small></p>
+                <a href="thecode.html" type="button" class="btn btn-primary btn-sm col-4"> Leia Mais</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row bg-light">
+          <div class="col-4 col-md-3 col-lg-2"> 
+              <img class="img-fluid max-width: 100% w-100 mt-4 mb-4"  src="imagens/misterioobscuro.png"></img>
+          </div>
+          <div class="col-8 col-md-9 col-lg-10 mt-3"> 
+              <h3>Misterio Obscuro</h3>
+              <p>Unacklowledged, como é intitulado em inglês, é um documentário da Auroris Media de 1h40min onde são reveladas várias informações sobre a existência e aparições de OVNIs, assim como as conspirações para evitar o vazamento dessas informações. Em um assunto tão polêmico, será a abordagem séria e profunda o suficiente para prender o telespectador?</small></p>
+              <a href="misterioobscuro.html" type="button" class="btn btn-primary btn-sm col-4"> Leia Mais</a>
+          </div>
+        </div>  
+        <hr> 
+    </div>
+    <div class="footer">
+      <p class="text-center">©2020 Copyright: Segredos da Antiguidade.</p>
+    </div>  
+         
+  </div>  
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 </html>
