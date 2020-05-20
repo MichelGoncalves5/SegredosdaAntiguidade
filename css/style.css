@@ -1,24 +1,11 @@
+@import url('http://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body {
     margin: 0px;
     font-size: 16px;
     font-family: 'Roboto Slab' Verdana, Arial, serif;
 }
 
-#container {
-    border-radius: 12px;    
-}
-
-#header {
-    background-color: black;
-    border-radius: 12px;
-    margin: 5px;
-    padding: 5px;
-}
-
-.banner {
-    width: 100%;
-    border-radius: 15px;    
-}
 
 #menu {
     background-color: black;
@@ -214,55 +201,9 @@ body {
     transition:all 1s linear;
 }
 
-#footer {
-    background-color: burlywood;
-    border-radius: 12px;
-    padding: 5px;
-    margin: 5px;
-    text-align: center; 
-    clear: right;  
-    font-size: 60%;
-    width: 100%;
-}
 
-h1 {
-    color: #871f78; 
-    text-align: center;
-    font-size: 140%;
-     
-}
 
-h2 {
-    color: rgb(0, 0, 35);
-    text-align: left;
-}
-
-h3 {
-    color: #871f78;
-    text-align: left;
-    margin-top: 5px;
-    margin-bottom: -5px;
-}
-
-h4 {
-    font-size: 10px;
-    color: blue;
-    text-align: right;
-}
-
-h5 {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-h6{
-    font-size: 16px;
-    font-weight: bold;
-    color: red;
-    opacity: .6;
-    text-align: center;
-}
-
+/*Decorações de texto */
 a {
     text-decoration: none;
 }
@@ -290,6 +231,8 @@ a {
     width: 80%;
     text-align: center;
 }
+
+/*Media query */
 
 @media (min-width: 600px){
 
@@ -356,4 +299,55 @@ body {
     z-index: 1;    
 }
 
+<<<<<<< Updated upstream:style.css
 }
+=======
+}
+
+/*Controles do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+/*Fontes*/
+
+h1 {
+    color: #79144E;
+}
+
+h2 {
+    color:#79144E;
+}
+
+h3 {
+    color:#FFA69E;
+}
+
+h4 {
+    color:#3B0D11;
+}
+
+h5 {
+    font-size: 80%;
+    text-align: right;
+    color: #93E1D8;
+>>>>>>> Stashed changes:css/style.css
