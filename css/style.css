@@ -29,21 +29,6 @@ body {
     font-size: 18px;
 }
 
-#critica {
-    border-radius: 12px;
-    margin-top: 0px;
-    margin-right: 5px;
-    margin-bottom: 0px;
-    margin-left: 5px;  
-}
-
-.linha {
-    border: solid 1px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .obra {
     position: relative;
     height: 180px;
@@ -205,19 +190,6 @@ a {
 
 .capa {
     width: 15%;
-}
-
-.obra:hover{
-    width: 30%;
-    transition:1s;
-}
-
-
-.imgobra:hover{
-    max-block-size: 200%;
-    block-size: 200%;
-    opacity: 1;
-    z-index: 1;    
 }
 
 }
