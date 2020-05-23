@@ -5,6 +5,10 @@ body {
     font-family: 'Roboto Slab' Verdana, Arial, serif;
 }
 
+.container {
+    background-color: #f8f8ff;
+}
+
 
 #contents {
     margin-top: 100px;
@@ -240,3 +244,4 @@ h5 {
     font-size: 80%;
     text-align: right;
     color: #93E1D8;
+}

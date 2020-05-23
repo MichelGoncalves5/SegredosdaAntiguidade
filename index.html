@@ -16,29 +16,28 @@
      <!-- ############# Header #########-->
     <div class="row">
       <div class="col">
-          <img class="img-fluid w-100"  src="images/header.png"></img>
+          <img class="img-fluid sm-w-75" src="images/header.png"></img>
       </div>
     </div>
 
     <!-- ############# Navbar #########-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"><h4><small>Home</small></h4><span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="artigos.html">Artigos</a>
+            <a class="nav-link" href="artigos.html"><h4><small>Artigos</small></h4></a>
           </li>
-          <li class="nav-item">
+          <!-- #region <li class="nav-item">
             <a class="nav-link" href="contos.html">Contos</a>
-          </li>
+          </li>-->
           <li class="nav-item">
-            <a class="nav-link disabled" href="critica.html">Crítica</a>
+            <a class="nav-link disabled" href="critica.html"><h4><small>Crítica</small></h4></a>
           </li>
         </ul>
       </div>
@@ -83,93 +82,84 @@
      
     <hr>
     <!-- ############# Cards #########-->
+    <h1 class="text-center">Curiosidades</h1>
     <div class="container-fluid">
-      <div class="row ">
-        <div class="col-sm-4 d-flex">
-          <div class="card">
-            <div class="card-header text-center"><h4>Curiosidades</h4></div>
-              <div class="card-body flex-fill">
-                <img class="img-fluid max-width-100 d-block mx-auto" src="images/henriqueviii.png">
-                <h3 class="card-title text-center">Henrique VIII</h3>
-                <p class="card-text">O famoso monarca Tudor, ao longo da vida, teve quatro "Criados da Latrina". Todos foram sagrados cavaleiros.</p>                 
-              </div>
-              <div class="card-footer">
-                <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal1"> Entenda</a>
-              </div>
+      <div class="row">
+        <div class="col-sm-4 d-flex mb-4">
+          <div class="card">            
+            <div class="card-body flex-fill">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/henriqueviii.png">
+              <h4 class="card-title text-center">Henrique VIII</h4>
+              <p class="card-text">O famoso monarca Tudor, ao longo da vida, teve quatro "Criados da Latrina". Todos foram sagrados cavaleiros.</p>                 
+            </div>
+            <div class="card-footer">
+              <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal1"> Entenda</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-4 d-flex">
-          <div class="card">
-            <div class="card-header text-center"><h4>Curiosidades</h4></div>
+        </div>        
+        <div class="col-sm-4 d-flex mb-4">
+          <div class="card">            
               <div class="card-body flex-fill">
                 <img class="img-fluid max-width-100 d-block mx-auto" src="images/castration.png">
-                <h3 class="card-title text-center">O Testículo Indesejado</h3>
-                <p class="card-text">Ao perseguir cegamente a sabedoria de Aristóteles, alguns homens medievais sacrificavam um testículo em troca de um herdeiro homem.</p>
-                  
+                <h4 class="card-title text-center">O Testículo Indesejado</h4>
+                <p class="card-text">Ao perseguir cegamente a sabedoria de Aristóteles, alguns homens medievais sacrificavam um testículo em troca de um herdeiro homem.</p>                  
               </div>
               <div class="card-footer">
-                <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal2"> Entenda</a>
+                <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal2"> Entenda</a>
               </div>
           </div>
         </div>
-        <div class="col-sm-4 d-flex">
+        <div class="col-sm-4 d-flex mb-4">
           <div class="card">
-            <div class="card-header text-center"><h4>Curiosidades</h4></div>
-              <div class="card-body flex-fill">
-                <img class="img-fluid max-width-100 d-block mx-auto" src="images/enterradovivo.png">
-                <h3 class="card-title text-center">Tafofobia</h3>
-                <p class="card-text">Medo de ser enterrado vivo é paranóia? No século XIX, isso acontecia com tanta frequência que uma invenção inusitada foi patenteada.</p>
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal3"> Entenda</a>
-              </div>              
+            <div class="card-body flex-fill">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/enterradovivo.png">
+              <h4 class="card-title text-center">Tafofobia</h4>
+              <p class="card-text">Medo de ser enterrado vivo é paranóia? No século XIX, isso acontecia com tanta frequência que uma invenção inusitada foi patenteada.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal3"> Entenda</a>
+            </div>              
           </div>          
         </div>
-      </div>
-      <hr>
-        <div class="row ">
-          <div class="col-sm-4 d-flex">
-            <div class="card">
-              <div class="card-header text-center"><h4>Curiosidades</h4></div>
-                
-                <div class="card-body flex-fill">
-                  <img class="img-fluid max-width-100 d-block mx-auto" src="images/impotencia.png">
-                  <h3 class="card-title text-center">Tribunais da Impotência</h3>
-                  <p class="card-text">Entre os séculos XIV e XVII, havia praticamente um único caminho para uma mulher conseguir um julgamento de divórcio: "provar" publicamente a impotênciado marido.</p>                 
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal4"> Entenda</a>
-                </div>
+      </div>      
+      <div class="row ">
+        <div class="col-sm-4 d-flex mb-4">
+          <div class="card">                
+            <div class="card-body flex-fill">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/impotencia.png">
+              <h4 class="card-title text-center">Tribunais da Impotência</h4>
+              <p class="card-text">Entre os séculos XIV e XVII, havia praticamente um único caminho para uma mulher conseguir um julgamento de divórcio: "provar" publicamente a impotênciado marido.</p>                 
+            </div>
+            <div class="card-footer">
+              <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal4"> Entenda</a>
             </div>
           </div>
-          <div class="col-sm-4 d-flex">
-            <div class="card">
-              <div class="card-header text-center"><h4>Curiosidades</h4></div>
-                <div class="card-body flex-fill">
-                  <img class="img-fluid max-width-100 d-block mx-auto" src="images/urina.png">
-                  <h3 class="card-title text-center">Urina na Higiene?</h3>
-                  <p class="card-text">Os romanos descobriram o poder purificador da amônia da urina, e faziam seu uso na limpeza dos dentes. E iam além: não utilizavam apenas a própria! </p>                    
-                </div>
-                <div class="card-footer">
-                  <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal5"> Entenda</a>
-                </div>
+        </div>
+        <div class="col-sm-4 d-flex mb-4">
+          <div class="card">
+            <div class="card-body flex-fill">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/urina.png">
+              <h4 class="card-title text-center">Urina na Higiene?</h4>
+              <p class="card-text">Os romanos descobriram o poder purificador da amônia da urina, e faziam seu uso na limpeza dos dentes. E iam além: não utilizavam apenas a própria! </p>                    
+            </div>
+            <div class="card-footer">
+              <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal5"> Entenda</a>
             </div>
           </div>
-          <div class="col-sm-4 d-flex">
-            <div class="card">
-              <div class="card-header text-center"><h4>Curiosidades</h4></div>
-                <div class="card-body flex-fill">
-                  <img class="img-fluid max-width-100 d-block mx-auto" src="images/descobrimento.png">
-                  <h3 class="card-title text-center">O Brasil Nasceu Dançando</h3>
-                  <p class="card-text">Talvez o a dança e festas estejam conosco desde o nascimento. Contam os historiados que Pedro Álvares Cabral foi recebido pelos índios com dança!</p>
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" type="button" class="btn btn-primary btn-sm col-12" data-toggle="modal" data-target="#myModal6"> Entenda</a>
-                </div>              
-            </div>          
-          </div>
-      </div>
-  
+        </div>
+        <div class="col-sm-4 d-flex mb-4">
+          <div class="card">
+            <div class="card-body flex-fill">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/descobrimento.png">
+              <h4 class="card-title text-center">O Brasil Nasceu Dançando</h4>
+              <p class="card-text">Talvez o a dança e festas estejam conosco desde o nascimento. Contam os historiados que Pedro Álvares Cabral foi recebido pelos índios com dança!</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" type="button" class="btn btn-primary btn-sm col-12 w-50 d-block mx-auto" data-toggle="modal" data-target="#myModal6"> Entenda</a>
+            </div>              
+          </div>          
+        </div>
+    </div>  
 
     <!-- ############# Modals #########-->
     <div class="modal fade" id="myModal1">
