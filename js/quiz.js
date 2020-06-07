@@ -3,11 +3,14 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const loader = document.getElementById("loader");
+const game = document.getElementById("game");
 let currentQuestion = {};
 let acceptinAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
 
 let questions = [
     {
@@ -27,11 +30,54 @@ let questions = [
     choice1: "resposta 1",
     choice2: "resposta 2",
     answer: 1
+},
+{
+    question: "Pergunta 4",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 5",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 6",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 7",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 8",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 9",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
+},
+{
+    question: "Pergunta 10",
+    choice1: "resposta 1",
+    choice2: "resposta 2",
+    answer: 1
 }
 ];
 
+
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 10;
 
 const startGame = () => {
     questionCounter = 0;
@@ -39,7 +85,9 @@ const startGame = () => {
     availableQuestions = [...questions];
 
     getNewQuestion();
-}
+    
+    
+};
 
 const getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
@@ -65,6 +113,8 @@ const getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
+
+    
 };
 
 choices.forEach( choice => {
@@ -85,13 +135,23 @@ choices.forEach( choice => {
         setTimeout ( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 3000);        
+            /*if (classToApply == "correct") {
+                alert("correto");
+            } else {
+                alert("falso");
+            }*/           
+        }, 500); 
+       
     });
 });
+
 
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
 
-startGame();
+game.classList.remove("hidden");
+    loader.classList.add("hidden");
+    startGame();
+
