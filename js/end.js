@@ -14,3 +14,11 @@ saveHighScore = e => {
     console.log("clicked the save btn");
     e.preventDefault();
 }
+
+
+document.getElementById('btn-hi').addEventListener('click',saveName);
+
+function saveName(input){
+var input = document.getElementById('userInput').value;
+hi.textContent = input;
+};

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parabéns!</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
     <link rel="stylesheet" href="css/game.css">
 </head>
@@ -11,31 +13,61 @@
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h3 class="text-center">Pontuação Final</h2>
-            <h1 id="finalScore"></h1>
-            <form>
+            <form id="form" onsubmit="return false">
                 <input
                     type="text"
-                    name="username"
-                    id="username"
+                    name="userInput"
+                    id="userInput"
                     placeholder="Nome"
                 />
-                <a  
-                type="submit" 
-                class="btn"
-                id="saveScoreBtn"
-                onclick="saveHighScore(event)" 
-                disabled
-                >
-                Save</a>
+                <button
+                    href="#"
+                    data-toggle="modal" 
+                    data-target="#myModal1" 
+                    class="btn" 
+                    type="submit" 
+                    onclick="saveName();"
+                    >Submeter</button>
+                
+                </form>
+                <br>
+                <hr>
+                <br>
+                
             </form>
             <a class="btn" href="game.html">Jogar Novamente</a>
             <a class="btn" href="home.html">Voltar ao Início</a>
         </div>
     </div>
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header d-block text-center">
+              <div class="modal-title">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h2 class="text-center"></h2>              
+              </div>            
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid max-width-100 d-block mx-auto" src="images/slaves.png">
+              <h1 id="finalScore"></h1>
+              <p class="text-justify" id="hi"></p>
+              <p id="finalScore"></p>
+            </div>
+            <div class="modal-footer">
+                
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="js/quiz.js"></script>
 
     <script src="js/end.js"></script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  
 </body>
 </html>
