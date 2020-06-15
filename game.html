@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
-    <link rel="stylesheet" href="css/game.css">
+    
 </head>
 <body>
     <div class="container">
         <div id="loader"></div>
         <div id="game" class="justify-center flex-column hidden">
+            <h1 class="text-small text-center m-0">Renascença</h1><hr>
             <div id="hud">
-                <div id="hud-item">
-                    <p id="progressText" class="hud-prefix">Questão</p>
+                <div id="hud-item">                    
+                    <p id="progressText" class="hud-prefix m-1">Questão</p>
                     <div id="progressBar">
                         <div id="progressBarFull"></div>
                     </div>    
                 </div>
                 <div id="hud-item">
                     <p class="hud-prefix">Pontuação</p>
-                    <h1 class="hud-main-text" id="score">0 </h1>
+                    <h2 class="hud-main-text m-3" id="score">0 </h1>
                 </div>
             </div>
-            <h2 id="question" >What is the Answer to this Question?</h2>
-            <div class="choice-container">
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice 1</p>
+            <h4 id="question" >What is the Answer to this Question?</h4>           
+            <div class="choice-container m-1">              
+                <p class="choice-text text-center" data-number="1">Choice 1</p>
             </div>
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>    
+            <div class="choice-container m-1">                            
+                <p class="choice-text text-center" data-number="2">Choice 2</p>                    
+            </div>  
+            
         </div>
     </div>
     

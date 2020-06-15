@@ -3,6 +3,7 @@
 body {
     margin: 0px;
     font-family: 'Roboto Slab' Verdana, Arial, serif;
+    font-size: 62,5%;
 }
 
 .container-no-gutters {
@@ -226,10 +227,12 @@ a {
 
 h1 {
     color: #79144E;
+    font-size: 3.5rem;
 }
 
 h2 {
     color:#79144E;
+    
 }
 
 h3 {

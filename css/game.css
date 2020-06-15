@@ -14,12 +14,6 @@
     transition: transform 150ms;
 }
 
-.choice-prefix {
-    padding: 1.5rem 2.5rem;
-    background-color: #55a5eb;
-    color: white;
-}
-
 .choice-text {
     padding: 1.5rem;
     width: 100%;
