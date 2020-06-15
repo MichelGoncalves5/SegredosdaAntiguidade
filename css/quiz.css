@@ -66,8 +66,6 @@
     background-color: white;
     border-radius: 2rem;
 }
-.choice-container:hover {
-    cursor: pointer;
 
 .choice-text {
     padding: .8rem;
