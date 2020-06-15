@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parabéns!</title>
+    <title>Pontuação Final</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiz.css">
@@ -36,7 +36,7 @@
                 
             </form>
             <a class="btn" href="game.html">Jogar Novamente</a>
-            <a class="btn" href="home.html">Voltar ao Início</a>
+            <a class="btn" href="home.html">Voltar ao Site</a>
         </div>
     </div>
     <div class="modal fade" id="myModal1">
@@ -45,17 +45,21 @@
             <div class="modal-header d-block text-center">
               <div class="modal-title">
                 <button type="button" class="close" data-dismiss="modal">X</button>
-                <h2 class="text-center"></h2>              
+                <h3 class="text-center">Parabéns!!</h3>              
               </div>            
             </div>
-            <div class="modal-body">
-              <img class="img-fluid max-width-100 d-block mx-auto" src="images/slaves.png">
-              <h1 id="finalScore"></h1>
-              <p class="text-justify" id="hi"></p>
-              <p id="finalScore"></p>
-            </div>
-            <div class="modal-footer">
-                
+            <div class="modal-body text-center"> 
+              <h4 id="hi"></h4> 
+              <br>            
+              <h6>Sua sabedoria sobre grécia antiga é</h6>
+              <h1 id="finalScore"></h1>              
+              <h6>Compartilhar</h6>              
+                <img src="images/facebook.png" href="https://www.facebook.com/sharer/sharer.php?u=URLENCODED&t=TITLE" class="share facebook m-3" data-network="facebook"></img>
+                <span></span>
+                <img src="images/twitter.png" href="https://twitter.com/share?url=URLENCODED&text=TITLE" class="share twitter m-3" data-network="twitter"></img>
+                <img src="images/linkedin.png" href="https://www.linkedin.com/shareArticle?mini=true&url=URLENCODED&title=TITLE&source=COMPANY" class="share linkedin m-3" data-network="linkedin"></img> 
+              </div> 
+            <div class="modal-footer">             
               <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
             </div>
           </div>
