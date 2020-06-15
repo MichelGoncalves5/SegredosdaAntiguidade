@@ -67,13 +67,6 @@
     border-radius: 2rem;
 }
 
-.choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-}
-
 .choice-text {
     padding: .8rem;
     width: 100%;
@@ -168,6 +161,12 @@ input::placeholder {
   @media (min-width: 768px) {
     .container {
       max-width: 640px;
+    }
+    .choice-container:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
     }
   }
   
