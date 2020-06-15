@@ -38,7 +38,7 @@ let questions = [
     answer: 1
 },
 {
-    question: "Apesar da rivalidade nas artes,Michaelangelo considerava Leonardo da Vinci um grande artista, com uma visão realmente avançada para sua época.",
+    question: "Apesar da rivalidade nas artes, Michelangelo considerava Leonardo da Vinci um grande artista, com uma visão realmente avançada para sua época.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 1
@@ -50,7 +50,7 @@ let questions = [
     answer: 1
 },
 {
-    question: "O David de Michaelangelo, escultura mais famosa do renascimento, foi uma homenagem do artista à família Médici, que o abrigou em sua casa e patrocinou muitas de suas obras.",
+    question: "O David de Michelangelo, escultura mais famosa do renascimento, foi uma homenagem do artista à família Médici, que o abrigou em sua casa e patrocinou muitas de suas obras.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 2
@@ -86,13 +86,13 @@ let questions = [
     answer: 1
 },
 {
-    question: "Ao ser convidado pelo Papa Julio II para pintar a Capela Cistina, Michaelangelo afirmou estar sendo castigado, para que não pudesse trabalhar em suas esculturas.",
+    question: "Ao ser convidado pelo Papa Julio II para pintar a Capela Cistina, Michelangelo afirmou estar sendo castigado, para que não pudesse trabalhar em suas esculturas.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 1
 },
 {
-    question: "A pintura dos 460 m2 da Capela Cistina, na verdade, foi feita pelos ajudantes de Michaelangelo, que planejou vistoriou todos os detalhes.",
+    question: "A pintura dos 460 m2 da Capela Cistina, na verdade, foi feita pelos ajudantes de Michelangelo, que planejou vistoriou todos os detalhes.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 2
