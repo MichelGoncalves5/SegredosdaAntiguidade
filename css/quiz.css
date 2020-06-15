@@ -66,10 +66,8 @@
     background-color: white;
     border-radius: 2rem;
 }
-
 .choice-container:hover {
-    cursor: pointer;   
-}
+    cursor: pointer;
 
 .choice-text {
     padding: .8rem;
@@ -167,11 +165,11 @@ input::placeholder {
       max-width: 640px;
     }
     .choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-}
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+    }
   }
   
   @media (min-width: 992px) {
