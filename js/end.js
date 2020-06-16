@@ -6,12 +6,9 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 finalScore.innerText = mostRecentScore +"%";
 
 //for adding user name on form for modal
-
-document.getElementById('btn-hi').addEventListener('click',saveName);
-
 function saveName(input){
 var input = document.getElementById('userInput').value;
-hi.textContent = input;
+nomeModal.textContent = input;
 };
 
 //for social media sharing
@@ -36,3 +33,7 @@ $('a.share').click(function(e){
   
   popup(network);
   });
+
+
+ 
+  

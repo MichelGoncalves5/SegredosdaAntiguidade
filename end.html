@@ -5,77 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pontuação Final</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/quiz.css">   
+    <link rel="stylesheet" href="css/style.css">     
 </head>
 <body>
-    <div class="container">
-        <div id="end" class="flex-center flex-column">
-            <h1 class="text-center m-2">Fim do Quiz</h1><hr>
-            <form id="form" onsubmit="return false">
-              <label for="userInput">Insira seu nome abaixo:</label>
-              <input
-                type="text"
-                name="userInput"
-                id="userInput"
-                placeholder="Nome"
-              />
-              <button
-                href="#"
-                data-toggle="modal" 
-                data-target="#myModal1" 
-                class="btn" 
-                type="submit" 
-                onclick="saveName();"
-                >Gere seu Resultado</button>
-              </form>
-              <br>
-              <hr>
-              <br>
-                
-            </form>
-            <a class="btn" href="game.html">Jogar Novamente</a>
-            <a class="btn" href="index.html">Voltar ao Site</a>
-        </div>
-    </div>
-    <div class="modal fade" id="myModal1">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header d-block text-center">              
-              <div class="modal-title">
-                
-                <h3 class="text-center m-0"><small>RESULTADO</small> </h3>              
-              </div>            
-            </div>
-            <div class="modal-body text-center"> 
-              <h2 id="hi"></h2> 
-              <br>            
-              <h6>Seu conhecimento sobre a Renascença é</h6>
-              <h1 id="finalScore"></h1> 
-              <br>
-              <h3><strong>PARABÉNS!!</strong></h3>  
-              <br>
-              <br>              
-              <hr>                            
-              <h6>Compartilhar com:</h6>              
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sdamc.github.io/SegredosdaAntiguidade/=SegredosdaAntiguidade" class="img share facebook m-3" data-network="facebook"><img src="images/facebook.png"alt=""></a>
-                <span></span>
-                <a href="https://twitter.com/share?url=URLENCODED&text=TITLE" class="share twitter m-3" data-network="twitter"><img src="images/twitter.png"></img></a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=URLENCODED&title=TITLE&source=COMPANY" class="share linkedin m-3" data-network="linkedin"><img src="images/linkedin.png" alt=""></a> 
-              </div> 
-            <div class="modal-footer">             
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-            </div>
+    <div class="container-game d-block mx-auto">
+      <!--######### Game Result ###########-->
+      <div id="end">
+        <h1 class="text-center m-2">Fim do Quiz</h1>
+        <br><br>
+        <form id="form" class= "mt-5" onsubmit="return false">
+        <label for="userInput">Insira seu nome abaixo:</label>
+        <input type="text" name="userInput" id="userInput" placeholder="Nome"/>
+        <button href="#" data-toggle="modal" data-target="#myModal1" class="btn-game" type="submit"  onclick="saveName();"><strong>Gerar Resultado</strong></button>
+        </form>
+        <br><br><br>                
+        </form>
+        <div class="row mt-5">
+          <div class="col text-center">
+            <a href="game.html"><strong>Jogar Novamente</strong></a>
+          </div>
+          <div class="col text-center">
+            <a href="index.html"><strong>Voltar ao Site</strong></a>
           </div>
         </div>
       </div>
-
+    </div>
+    <!--################Modal###########-->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center">              
+            <div class="modal-title">                
+              <h3 class="text-center m-0"><small>RESULTADO</small> </h3>              
+            </div>            
+          </div>
+          <div class="modal-body text-center"> 
+            <h2 id="nomeModal"></h2>
+            <br>            
+            <h6>Seu conhecimento sobre a Renascença foi de</h6>
+            <h1 id="finalScore"></h1> 
+            <br>
+            <h3><strong>PARABÉNS!!</strong></h3>  
+            <br><br>                                         
+            <!--<h6>Compartilhar com:</h6>              
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://sdamc.github.io/SegredosdaAntiguidade/=SegredosdaAntiguidade" class="img share facebook m-3" data-network="facebook"><img src="images/facebook.png"alt=""></a>
+            <span><span>
+            <a href="https://twitter.com/share?url=URLENCODED&text=TITLE" class="share twitter m-3" data-network="twitter"><img src="images/twitter.png"></img></a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=URLENCODED&title=TITLE&source=COMPANY" class="share linkedin m-3" data-network="linkedin"><img src="images/linkedin.png" alt=""></a>--> 
+          </div> 
+          <div class="modal-footer">             
+            <button type="button" class="btn-game btn-danger" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/quiz.js"></script>
-
     <script src="js/end.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-  
+    <script src="js/bootstrap.js"></script>  
 </body>
 </html>

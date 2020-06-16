@@ -41,7 +41,7 @@ let questions = [
     question: "Apesar da rivalidade nas artes, Michelangelo considerava Leonardo da Vinci um grande artista, com uma visão realmente avançada para sua época.",
     choice1: "Verdadeiro",
     choice2: "Falso",
-    answer: 1
+    answer: 2
 },
 {
     question: "Leonardo da Vinci podia dissecar cadáveres sem infringir a lei, graças a uma permissão especial que recebeu como reconhecimento de sua genialidade como artista, inventor e cientista.",
@@ -86,13 +86,13 @@ let questions = [
     answer: 1
 },
 {
-    question: "Ao ser convidado pelo Papa Julio II para pintar a Capela Cistina, Michelangelo afirmou estar sendo castigado, para que não pudesse trabalhar em suas esculturas.",
+    question: "Ao ser intimado pelo Papa Julio II a pintar a Capela Cistina, Michelangelo afirmou estar sendo castigado para que não pudesse trabalhar em suas esculturas.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 1
 },
 {
-    question: "A pintura dos 460 m2 da Capela Cistina, na verdade, foi feita pelos ajudantes de Michelangelo, que planejou vistoriou todos os detalhes.",
+    question: "A pintura dos 460 m2 da Capela Cistina, na verdade, foi feita pelos ajudantes de Michelangelo, que planejou e vistoriou todos os detalhes.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 2
@@ -158,24 +158,18 @@ choices.forEach( choice => {
 
         setTimeout ( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-            /*if (classToApply == "correct") {
-                alert("correto");
-            } else {
-                alert("falso");
-            }*/           
+            getNewQuestion();                      
         }, 500); 
        
     });
 });
-
 
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
 
-game.classList.remove("hidden");
-    loader.classList.add("hidden");
+game.classList.remove("d-none");
+    loader.classList.add("d-none");
     startGame();
 
