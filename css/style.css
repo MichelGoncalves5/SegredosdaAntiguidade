@@ -55,19 +55,22 @@ a:hover {
 h1 {
     color: #79144E;
     font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, .2);
 }
 
 h2 {
-    color:#79144E;
+    color:#F5CB5C;
+    font-weight: bold;
     
 }
 
 h3 {
-    color:#FFA69E;
+    color:#348AA7;
 }
 
 h4 {
-    color:#3B0D11;
+    color:#79144E;
 }
 
 h5 {
@@ -80,44 +83,64 @@ p {
     font-size: 1rem;
 }
 
-/*Media query */
+/* #### Navbar #####*/
 
-@media (min-width: 600px){
+.navbar {
+    background-color: #79144E;
+    padding: 0.2rem;
+}
+
+.nav-font {
+    color: #f8f8ff;
+}
+
+/* ##### Iframe Style #####*/
+
+iframe {
+    border-radius: .3rem;
+    display: none;
+ 
+}
+
+/* ##### Cards Style #####*/
+
+#cards {
+    background-color: #DDFFF7;  
+    padding: 1rem;
+    border-radius: .3rem; 
+}
+
+#cards-index {
+    background-color: #DDFFF7;  
+    padding: 1rem;
+    border-radius: .3rem; 
+}
+.card {
+    box-shadow: .3rem .3rem rgba(0, 0, 0, .2);
+}
+/* ##### Quiz Style #####*/
+
+#quiz {
+    background-color: #DDFFF7;    
+    padding: 2rem;
+    border-radius: .3rem;    
+}
+
+/* ##### Artigos Style #####*/
+
+.artigos {
+    background-color: #DDFFF7;    
+    padding: 2rem;
+    border-radius: .3rem;  
+}
 
 
+/* ##### Carousel Style #####*/
 
-@media (min-width: 576px) {
-    
-
-    #contents {
-        margin-right: 330px;
-    }
-    
-    .comentario {
-        font-size: 16px;
-        margin-right: 100px;
-        padding-left: 100px;
-        padding-top: 30px;
-    }
-    
-    .obra {
-        width: 20%;
-        margin-left: 5%;
-    }
-    
-    .capa {
-        width: 15%;
-    }
- }
-  
-  @media (min-width: 768px) {
-    
-    .choice-container:hover {
-        box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
-        transform: translateY(-0.1rem);
-        transition: transform 150ms;
-    }
-  }
+#carousel {
+    background-color: #DDFFF7;    
+    padding: 2rem;
+    border-radius: .3rem;
 
 }
 
@@ -148,6 +171,12 @@ p {
 
 .container-game {
     max-width: 600px;
+    background-color: #f8f8ff;
+}
+
+.header-game {
+    background-color: #79144E;
+    color: #f8f8ff;
 }
 
 .btn-game {
@@ -265,3 +294,46 @@ input::placeholder {
       transform: rotate(360deg);
     }
   }
+
+  /* ##### footer Style #####*/
+
+footer {
+    clear: both;
+    background-color: #348AA7;  
+    padding: 1rem;
+    margin-left: -10;}
+
+/*Media query */
+
+@media (min-width: 600px){
+
+    iframe {
+        display: block;
+    }
+
+    #carousel {
+        width: 65%;
+    }
+
+    #quiz {
+        width: 65%;
+    }
+
+    .artigos {
+        width: 65%;
+    }
+
+    #cards-index {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+    
+    .choice-container:hover {
+        box-shadow: 0 0.4rem 1.4rem 0 #FFA69E;
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+    }
+    }
+
+}
