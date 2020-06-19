@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    font-family: 'Roboto Slab' Verdana, Arial, serif;
+    font-family: 'Roboto Slab', Verdana, Arial, serif;
     font-size: 62,5%;   
     background-color: #f8f8ff; 
 }
@@ -54,7 +54,7 @@ a:hover {
 }
 h1 {
     color: #79144E;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: .2rem .2rem rgba(0, 0, 0, .2);
 }
@@ -62,11 +62,15 @@ h1 {
 h2 {
     color:#F5CB5C;
     font-weight: bold;
+    font-size: 2.0rem;
+
     
 }
 
 h3 {
     color:#348AA7;
+    font-size: 1.5rem;
+
 }
 
 h4 {
@@ -99,19 +103,20 @@ p {
 iframe {
     border-radius: .3rem;
     display: none;
+    height: 954px;
  
 }
 
 /* ##### Cards Style #####*/
 
 #cards {
-    background-color: #DDFFF7;  
+    background-color: #DCEDFF;  
     padding: 1rem;
     border-radius: .3rem; 
 }
 
 #cards-index {
-    background-color: #DDFFF7;  
+    background-color: #DCEDFF;  
     padding: 1rem;
     border-radius: .3rem; 
 }
@@ -121,7 +126,7 @@ iframe {
 /* ##### Quiz Style #####*/
 
 #quiz {
-    background-color: #DDFFF7;    
+    background-color: #DCEDFF;    
     padding: 2rem;
     border-radius: .3rem;    
 }
@@ -129,16 +134,19 @@ iframe {
 /* ##### Artigos Style #####*/
 
 .artigos {
-    background-color: #DDFFF7;    
+    background-color: #DCEDFF;    
     padding: 2rem;
     border-radius: .3rem;  
 }
 
+.capa {
+    width: 25%;
+}
 
 /* ##### Carousel Style #####*/
 
 #carousel {
-    background-color: #DDFFF7;    
+    background-color: #DCEDFF;    
     padding: 2rem;
     border-radius: .3rem;
 
@@ -312,11 +320,11 @@ footer {
     }
 
     #carousel {
-        width: 65%;
+        width: 66%;
     }
 
     #quiz {
-        width: 65%;
+        width: 66%;
     }
 
     .artigos {
