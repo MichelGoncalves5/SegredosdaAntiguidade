@@ -7,31 +7,6 @@ body {
     background-color: #f8f8ff; 
 }
 
-/*#### Buttons  Website #####*/
-
-#btn1 {
-    width:50%;
-    text-align: center;
-    border-radius: 15px;
-    margin: 0 auto; 
-    display: block; 
-    padding: 12px; 
-    background-color:#871f78;
-    color: white;
-    font-weight: bold;
-    outline: 0;
-
-}
-
-#p1 {
-    overflow: hidden;
-    height: 0px;
-    -moz-transition:all 1s linear;
-    -webkit-transition:all 1s linear;
-    -o-transition:all 1s linear;
-    transition:all 1s linear;
-}
-
 /*#### Text Styles & Fonts #####*/
 
 a:hover {
@@ -166,13 +141,13 @@ iframe {
 .carousel-control-next-icon:after
 {
   content: '>';
-  font-size: 55px;
+  font-size: 4rem;
   color: black;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
-  font-size: 55px;
+  font-size: 4rem;
   color: black;
 }
 
@@ -181,6 +156,8 @@ iframe {
 .container-game {
     max-width: 600px;
     background-color: #f8f8ff;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .header-game {
