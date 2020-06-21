@@ -142,13 +142,13 @@ iframe {
 {
   content: '>';
   font-size: 4rem;
-  color: black;
+  color: #79144E;
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 4rem;
-  color: black;
+  color: #79144E;
 }
 
 /*### GAME ###*/
