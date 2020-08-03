@@ -285,10 +285,13 @@ input::placeholder {
   /* ##### footer Style #####*/
 
 footer {
+    color: white;
     clear: both;
-    background-color: #348AA7;  
-    padding: 1rem;
-    margin-left: -10;}
+    background-color: #79144E;  
+    padding-top: 1rem;
+    padding-bottom: .1rem;
+    margin-left: -10;
+}
 
 /*Media query */
 
