@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz das Cruzadas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">      
+</head>
+<body>
+    <div class="container-game mx-auto d-block">
+        <div id="loader"></div>
+        <div id="game" class="d-none mx-auto">
+            <h1 class="header-game text-small text-center m-0">Cruzadas</h1>
+            <div id="hud">
+                <div class="hud-item">            
+                    <p id="progressText" class="hud-prefix m-1">Questão</p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>    
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">Pontuação</p>
+                    <h2 class="hud-main-text m-3" id="score">0 </h2>
+                </div>
+            </div>
+            <h4 id="question" class="text-justify mb-3">What is the Answer to this Question??</h4>           
+            <div class="choice-container d-block mx-auto m-3">              
+                <p class="choice-text text-center" data-number="1">Choice 1</p>
+            </div>
+            <div class="choice-container d-block mx-auto m-3">                            
+                <p class="choice-text text-center" data-number="2">Choice 2</p>                    
+            </div>              
+        </div>
+    </div>
+    <script src="js/quiz-cruzades.js"></script>
+    <script src="js/end-cruzadas.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
