@@ -14,87 +14,87 @@ let availableQuestions = [];
 
 let questions = [
     {
-    question: "Who was the father of Romulus and Remus?",
-    choice1: "Marte",
-    choice2: "A Loba Laica",
+    question: "Segundo a lenda, de quem Rômulo e Remo eram filhos?",
+    choice1: "Do deus Marte",
+    choice2: "Da Loba Laica",
     answer: 1
 },
 {
-    question: "Which was the first Roman road – and where did it run?",
+    question: "Qual o nome da primeira estrada romana?",
     choice1: "Via Appia",
-    choice2: "Nenhuma",
-    answer: 2
+    choice2: "Via Sacra",
+    answer: 1
 }, 
 {
-    question: "Which enemy city did the Romans plough with salt?",
-    choice1: "Cartago",
+    question: "Após finalmente subjugarem Cartago, os romanos desolaram suas terras com sal grosso.",
+    choice1: "Verdadeiro",
     choice2: "Falso",
+    answer: 2
+},
+{
+    question: "Qual imperador ficou famoso por construir uma grande muralha na bretanha que perdura até hoje?",
+    choice1: "Adriano",
+    choice2: "Julio César",
     answer: 1
 },
 {
-    question: "How many times was Rome sacked in the times of the empire?",
-    choice1: "Six",
-    choice2: "Trẽs ou Quatro",
+    question: "Qual a origem do nome 'César', do famoso ditador Julio César?",
+    choice1: "Ele nasceu de cesariana",
+    choice2: "Significa Cabelos dos Ancestrais",
     answer: 2
 },
 {
-    question: "AWhy was Julius called ‘Caesar’?",
-    choice1: "Cesareana",
-    choice2: "Cabelos dos ancestrais",
-    answer: 2
-},
-{
-    question: "How many heirs did Augustus lose before his death on 19 August AD 14?",
+    question: "Quantos herdeiros perdeu Augusto, até o dia de sua própria morte?",
     choice1: "5",
     choice2: "2",
     answer: 1
 },
 {
-    question: "4) What leader became the dictator of Rome and put an end to the Roman Republic?",
-    choice1: "augustus",
-    choice2: "Cesar",
-    answer: 2
+    question: "Qual líder tornou-se ditador e, com isso, acabou com a República Romana, criando o Império Romano?",
+    choice1: "Augusto",
+    choice2: "César",
+    answer: 1
 },
 {
-    question: "Around what year did the Western Roman Empire fall?",
+    question: "Qual ano da queda do Império Romano Ocidental?",
     choice1: "476",
     choice2: "685",
     answer: 1
 },
 {
-    question: "Quem foi o primeiro imperador romano?",
-    choice1: "Cesar",
-    choice2: "Augusto",
+    question: "Tibério, segundo imperador de Roma, tornou-se tão paranóico que trocou a capital por uma ilha. Qual seu nome?",
+    choice1: "Sardenha",
+    choice2: "Capri",
     answer: 2
 },
 {
-    question: "Os romanos lavavam os dentes com urina",
+    question: "Os romanos escovavam seus dentes com urina",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 1
 },
 {
-    question: "A conquista de uma importante cidade pelos Otomanos, em 1453, promoveu o fluxo de livros e sábios para a Italia, acelerando o renascimento.",
-    choice1: "Jerusalém",
-    choice2: "Constantinopla",
+    question: "Cláudio, competente imperador, tinha uma disfunção que o tornava alvo de chacotas no senado romano. Qual era ela?",
+    choice1: "Impotência Sexual",
+    choice2: "Gagueira",
     answer: 2
 },
 {
-    question: "O Malleus Maleficarum, livro que instruía como identificar e torturar bruxas, foi aprovado por uma bula do Papa Inocêncio VIII.",
+    question: "Nero mandou envenenar sua mãe Agripina, mas ela tomou antídoto a tempo. Depois pagou para afundarem o barco em que ela viajava, mas ela nadou até a costa. Finalmente, ele contratou um assassino para esfaqueá-la.",
     choice1: "Verdadeiro",
     choice2: "Falso",
     answer: 1
 },
 {
-    question: "Ao ser intimado pelo Papa Julio II a pintar a Capela Cistina, Michelangelo afirmou estar sendo castigado para que não pudesse trabalhar em suas esculturas.",
-    choice1: "Verdadeiro",
-    choice2: "Falso",
+    question: "Qual nome do imperador que lutava nas arenas romanas, alegando ser a encarnação do próprio Hercules?",
+    choice1: "Cômodus",
+    choice2: "Calígula",
     answer: 1
 },
 {
-    question: "A pintura dos 460 m2 da Capela Cistina, na verdade, foi feita pelos ajudantes de Michelangelo, que planejou e vistoriou todos os detalhes.",
-    choice1: "Verdadeiro",
-    choice2: "Falso",
+    question: "Nome do respeitado imperador romano que ficou conhecido por ser um filósofo estóico.",
+    choice1: "Caracalla",
+    choice2: "Marco Aurélo",
     answer: 2
 }
 ];
@@ -116,7 +116,7 @@ const startGame = () => {
 const getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        return window.location.assign('end.html');
+        return window.location.assign('end-rome.html');
     }
 
     questionCounter++;
